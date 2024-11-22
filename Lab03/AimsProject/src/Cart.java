@@ -1,11 +1,9 @@
+
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     private int qtyOrdered = 0;
 
-
-
-    
 
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered < MAX_NUMBERS_ORDERED) {
@@ -14,6 +12,18 @@ public class Cart {
         } else {
             System.out.println("ERROR: the cart is full");
         }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc []dvdList) {
+    	for (int i = 0; i < dvdList.length; i++) {
+    		this.addDigitalVideoDisc(dvdList[i]);
+    	}
+    }
+//    public void addDigitalVideoDisc(DigitalVideoDisc...dvdList) {
+//    	this.addDigitalVideoDisc(dvdList[i]);
+//    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2) {
+    	this.addDigitalVideoDisc(dvd1);
+    	this.addDigitalVideoDisc(dvd2);
     }
 
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
