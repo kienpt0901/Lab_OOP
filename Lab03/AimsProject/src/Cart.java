@@ -26,8 +26,6 @@ public class Cart {
     	this.addDigitalVideoDisc(dvd2);
     }
 
-
-
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         boolean isfound = false;
         for (int i = 0; i < qtyOrdered; i++) {
@@ -54,5 +52,27 @@ public class Cart {
             total += itemsOrdered[i].getCost();
         }
         return total;
+    }
+    public void print() {
+    	System.out.println("***********************CART***********************");
+    	for (int i = 0; i < qtyOrdered; i++) {
+    		System.out.println(itemsOrdered[i].toString());
+    	}
+    	System.out.println("Total cost: " + totalCost());
+    }
+    public void Search(String title) {
+    	for (int  i = 0; i < qtyOrdered; i++) {
+    		if (itemsOrdered[i].isMatch(title)) {
+    			System.out.println(itemsOrdered[i].toString());
+    		}
+    	}
+    }
+    
+    public void Search(int Id) {
+    	for (int  i = 0; i < qtyOrdered; i++) {
+    		if (itemsOrdered[i].isMatch(Id)) {
+    			System.out.println(itemsOrdered[i].toString());
+    		}
+    	}
     }
 }
