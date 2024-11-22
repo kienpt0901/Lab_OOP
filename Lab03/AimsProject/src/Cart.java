@@ -4,6 +4,9 @@ public class Cart {
     private int qtyOrdered = 0;
 
 
+
+    
+
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered < MAX_NUMBERS_ORDERED) {
         	itemsOrdered[qtyOrdered] = disc;
