@@ -8,6 +8,9 @@ public class DigitalVideoDisc {
 	public DigitalVideoDisc() {
 		super();
 	}
+
+
+	
 	
 	public DigitalVideoDisc(String title) {
 		super();

@@ -13,6 +13,8 @@ public class Cart {
         }
     }
 
+
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         boolean isfound = false;
         for (int i = 0; i < qtyOrdered; i++) {
@@ -30,6 +32,8 @@ public class Cart {
             System.out.println("ERROR: the disc is not in the cart");
         }
     }
+
+    
 
     public float totalCost() {
         float total = 0;
