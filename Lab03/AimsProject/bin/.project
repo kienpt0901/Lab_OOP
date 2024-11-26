@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>Test_Lab03</name>
+=======
 	<name>AimsProject</name>
+>>>>>>> a4fde0c92d93f329e2f730e932a22a25decfd93d
 	<comment></comment>
 	<projects>
 	</projects>

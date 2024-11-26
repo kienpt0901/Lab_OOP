@@ -1,0 +1,5 @@
+1. After calling swap(jungleDVD, cinderellaDVD), why do the titles of these two objects remain unchanged?
+=> In Java, method arguments are passed by value. When the swap method is called, it receives copies of the references to jungleDVD and cinderellaDVD. Swapping these references within the method only affects the local copies, leaving the original references jungleDVD and cinderellaDVD unchanged. Moreover, the actual DigitalVideoDisc objects themselves are not modified, so their titles remain the same.
+
+2. After calling changeTitle(jungleDVD, cinderellaDVD.getTitle()), why does the title of jungleDVD change?
+=> In this case, the title of jungleDVD is directly modified using a setter method implemented in the original class. This operation explicitly replaces its title with that of cinderellaDVD.
